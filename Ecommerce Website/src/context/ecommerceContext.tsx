@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
-const ecommerceContext = createContext(null);
+const EcommerceContext = createContext(null);
 
 const EcommerceContextProvider = ({ children }) => {
   //   const [loading, setLoading] = useState(false);
@@ -83,10 +83,10 @@ const EcommerceContextProvider = ({ children }) => {
   );
 };
 
-export { ecommerceContext, EcommerceContextProvider };
+export { EcommerceContext, EcommerceContextProvider };
 
 export const useEcommerce = () => {
-  const context = useContext(ecommerceContext);
+  const context = useContext(EcommerceContext);
   if (!context) {
     throw new Error(
       "useEcommerce must be used within an EcommerceContextProvider"
