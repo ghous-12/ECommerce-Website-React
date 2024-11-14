@@ -14,6 +14,8 @@ import linkedin from "../assets/linkedin-icon.png";
 
 export const routes = {
   home: "/",
+  shop: "/shop",
+  cart: "/cart",
 };
 
 export const images = {
